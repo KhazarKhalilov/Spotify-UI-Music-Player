@@ -1,4 +1,4 @@
-# Welcome to 05 Styling
+# Welcome to Styling
 ***
 
 # Spotify Design System (Minimal)
