@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+/* Design tokens as CSS variables (single source of truth) */
+:root {
+  /* background & surfaces */
+  --bg: 245 246 248;
+  --surface: 255 255 255;
+
+  /* text */
+  --text: 18 18 18;
+  --muted: 110 110 110;
+
+  /* borders */
+  --border: 220 224 230;
+
+  /* accents (Spotify-ish green + secondary) */
+  --accent: 30 215 96;
+  --accent2: 88 101 242;
+
+  /* status */
+  --danger: 239 68 68;
+}
+
+/* Dark mode overrides */
+html.dark {
+  --bg: 12 12 12;
+  --surface: 24 24 24;
+
+  --text: 245 245 245;
+  --muted: 170 170 170;
+
+  --border: 55 55 55;
+
+  --accent: 30 215 96;
+  --accent2: 88 101 242;
+
+  --danger: 248 113 113;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: rgb(var(--bg));
+  color: rgb(var(--text));
+}

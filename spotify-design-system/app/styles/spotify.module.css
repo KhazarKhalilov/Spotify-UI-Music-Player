@@ -1,0 +1,37 @@
+.heroGlow {
+  background:
+    radial-gradient(circle at 15% 0%, rgba(30,215,96,0.25), transparent 45%),
+    radial-gradient(circle at 60% 10%, rgba(88,101,242,0.18), transparent 50%),
+    linear-gradient(180deg, rgba(255,255,255,0.04), transparent 55%);
+}
+
+.glassTop {
+  backdrop-filter: blur(10px);
+  background: rgba(18, 18, 18, 0.55);
+}
+
+.trackRow {
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+.trackRow:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+.activeRow {
+  background: rgba(30,215,96,0.12);
+  border: 1px solid rgba(30,215,96,0.25);
+}
+
+.progressTrack {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.progressFill {
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(30,215,96,1), rgba(88,101,242,1));
+  transition: width 200ms ease;
+}

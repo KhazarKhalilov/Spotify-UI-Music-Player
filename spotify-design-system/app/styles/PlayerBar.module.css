@@ -1,0 +1,26 @@
+.bar {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  inset: -40px;
+  background: radial-gradient(circle at 30% 20%, rgba(30, 215, 96, 0.25), transparent 45%),
+              radial-gradient(circle at 70% 80%, rgba(88, 101, 242, 0.25), transparent 45%);
+  filter: blur(18px);
+  pointer-events: none;
+}
+
+.progressTrack {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.progressFill {
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(30,215,96,1), rgba(88,101,242,1));
+  transition: width 250ms ease;
+}
